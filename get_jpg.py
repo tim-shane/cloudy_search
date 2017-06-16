@@ -3,14 +3,12 @@ import requests
 from PIL import Image
 from io import BytesIO
 
-#This is a MS Cognitive Search v7.0 API
-api = 'API-KEY'
 '''
 Switching to the v7 api because v5 returns the img URL wrapped in a bing.com url
 '''
 PyMsCognitiveImageSearch.SEARCH_IMAGE_BASE = 'https://api.cognitive.microsoft.com/bing/v7.0/images/search'
 
-def return_img(search_term, search_modifier):
+def return_img(api, search_term, search_modifier):
     search = search_term + ' ' + search_modifier
     print(search)
     bing_image = PyMsCognitiveImageSearch(api, search)
