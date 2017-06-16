@@ -5,14 +5,16 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
+#This is a MS Cognitive Search v7.0 API
+api = 'API-KEY'
 
 def make_it_rain(search_term, search_modifier=""):
 
     # Return Bing search snippets
-    text = return_txt(search_term)
+    text = return_txt(api, search_term)
 
     # Get mask image from Bing
-    image_mask = np.array(return_img(search_term, search_modifier))
+    image_mask = np.array(return_img(api, search_term, search_modifier))
 
     # potential feature
     stopwords = set(STOPWORDS)
