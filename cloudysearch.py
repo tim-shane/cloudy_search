@@ -26,5 +26,4 @@ def make_it_rain(search_term, search_modifier=""):
     plt.imshow(wordcloud.recolor(color_func=image_colors), alpha=.8, interpolation='None')
     plt.axis("off")
     plt.show()
-
-make_it_rain("tyrannosaurus rex")
+    
