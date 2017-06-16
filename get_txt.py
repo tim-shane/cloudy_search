@@ -1,8 +1,8 @@
 from py_ms_cognitive import PyMsCognitiveWebSearch
 
-#This is a MS Cognitive Search V.5 API
-api = 'API-KEY'
-
+api = 'API_KEY'
+# Changing to v7 so you only need one API key.
+PyMsCognitiveWebSearch.SEARCH_WEB_BASE = 'https://api.cognitive.microsoft.com/bing/v7.0/search'
 
 def return_txt(search_term):
     txt = ""
