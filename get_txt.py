@@ -1,7 +1,7 @@
 from py_ms_cognitive import PyMsCognitiveWebSearch
 
-
-api = '2943c57efabb48ddba07847b67f5ae5f'
+#This is a MS Cognitive Search V.5 API
+api = 'API-KEY'
 
 
 def return_txt(search_term):
