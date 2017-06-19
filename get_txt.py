@@ -7,5 +7,5 @@ PyMsCognitiveWebSearch.SEARCH_WEB_BASE = 'https://api.cognitive.microsoft.com/bi
 def return_txt(api, search_term):
     bing_txt = PyMsCognitiveWebSearch(api, search_term)
     first_result = bing_txt.search()
-    txt = str([snip.snippet for snip in first_result]])
+    txt = str([snip.snippet for snip in first_result])
     return txt
